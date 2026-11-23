@@ -1489,7 +1489,7 @@ namespace PS4GameMenu
 				draw->AddImage(portrait->GetTexRef(), image_min, image_max);
 				draw->PopClipRect();
 				draw->AddRect(point(profile_x, profile_y), point(profile_x + profile_w, profile_y + profile_h),
-					IM_COL32(56, 164, 239, 235), 14.0f * scale, 0, 2.0f * scale);
+					IM_COL32(56, 164, 239, 235), 14.0f * scale, 2.0f * scale, 0);
 			}
 			else
 			{
