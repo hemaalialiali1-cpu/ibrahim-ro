@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="205" height="52" viewBox="0 0 205 52" role="img" aria-label="Rodape: Selecionar">
+  <title>Rodape: Selecionar</title>
+  
+  <circle cx="25" cy="26" r="21" stroke="#C45BFF" stroke-width="2.4" fill="#10091F"/><path d="M17 18 33 34M33 18 17 34" stroke="#C45BFF" stroke-width="3.2" fill="none" stroke-linecap="round"/><text x="57" y="33" font-family="Arial, DejaVu Sans, sans-serif" font-size="18" fill="#D8C8F4">Selecionar</text>
+</svg>
