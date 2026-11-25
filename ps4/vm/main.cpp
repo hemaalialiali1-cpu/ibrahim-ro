@@ -695,7 +695,7 @@ void VMHostPoll()
 				if (!error.empty())
 				{
 					ProbeLog("Save state failed: %s\n", error.c_str());
-					Host::AddIconOSDMessage("PS4SX2SaveStateError", ICON_FA_TRIANGLE_EXCLAMATION,
+					Host::AddIconOSDMessage("PS4SX2SaveStateError", ICON_FA_EXCLAMATION,
 						error, Host::OSD_INFO_DURATION);
 				}
 			});
@@ -716,7 +716,7 @@ void VMHostPoll()
 			else
 			{
 				ProbeLog("Load state failed slot=%u: %s\n", s_game_save_slot + 1, load_error.GetDescription().c_str());
-				Host::AddIconOSDMessage("PS4SX2LoadStateError", ICON_FA_TRIANGLE_EXCLAMATION,
+				Host::AddIconOSDMessage("PS4SX2LoadStateError", ICON_FA_EXCLAMATION,
 					load_error.GetDescription(), Host::OSD_INFO_DURATION);
 			}
 			s_game_menu_direction = 0;
