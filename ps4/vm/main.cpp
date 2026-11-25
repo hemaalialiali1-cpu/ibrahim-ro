@@ -1,3 +1,4 @@
+#include "IconsFontAwesome.h"
 // SPDX-License-Identifier: GPL-3.0+
 // (AI-assisted) Boot the full PCSX2 VM on PS4, bypassing the incremental probe methodology.
 #include "Config.h"
@@ -695,7 +696,7 @@ void VMHostPoll()
 				if (!error.empty())
 				{
 					ProbeLog("Save state failed: %s\n", error.c_str());
-					Host::AddIconOSDMessage("PS4SX2SaveStateError", ICON_FA_EXCLAMATION,
+					Host::AddIconOSDMessage("PS4SX2SaveStateError", ICON_FA_TRIANGLE_EXCLAMATION,
 						error, Host::OSD_INFO_DURATION);
 				}
 			});
@@ -716,7 +717,7 @@ void VMHostPoll()
 			else
 			{
 				ProbeLog("Load state failed slot=%u: %s\n", s_game_save_slot + 1, load_error.GetDescription().c_str());
-				Host::AddIconOSDMessage("PS4SX2LoadStateError", ICON_FA_EXCLAMATION,
+				Host::AddIconOSDMessage("PS4SX2LoadStateError", ICON_FA_TRIANGLE_EXCLAMATION,
 					load_error.GetDescription(), Host::OSD_INFO_DURATION);
 			}
 			s_game_menu_direction = 0;
